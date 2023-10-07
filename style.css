@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color: #89216b;
+}
+
+.start {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 20vh;
+  height: 6vh;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  border-radius: 20px;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 5px rgba(242, 0, 0, 0.5));
+  background: #ff4b2b;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.514));
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: url('https://kartinkin.net/uploads/posts/2021-04/1617613076_42-p-fon-fonk-47.jpg'), no-repeat;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #C0C0C0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 5px rgba(242, 0, 0, 0.5));
+}
+
+.time-btn:hover {
+  border: 2px solid #89216b;
+  color: #89216b;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #89216b;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: black;
+  box-shadow: -8px -8px 20px #c31432, 10px 7px 20px #ff4b2b;
+  border-radius: 30px;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.circle {
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.designer {
+  background: url('https://i.gifer.com/1ksL.gif'); 
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: center;
+}
